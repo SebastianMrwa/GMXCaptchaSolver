@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "GMX Captcha Solver",
+    "version": "1.0",
+    "description": "Solves Captchas when logging into gmx-account",
+    "icons": {
+        "16": "images/16.png",
+        "128": "images/128.png"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "scripting",
+        "downloads"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+  }
+  
